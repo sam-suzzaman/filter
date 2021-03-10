@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbdb;
+    padding: 50px auto;
+}
+
+.container .filter-wrapper {
+    background-color: #fff;
+    width: 70%;
+    height: 70vh;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.filter-wrapper .filter-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter-buttons a.mybtn {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-style: italic;
+    display: inline-block;
+    border: 2px solid #000000;
+    padding: 5px 8px;
+    border-radius: 7px;
+    transition: .3s linear;
+}
+
+.filter-buttons a.mybtn:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 165, 179);
+}
+
+.filter-wrapper .items-wrap {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-wrap .card {
+    width: 33%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.items-wrap .card img {
+    width: 100%;
+}
+
+
+.items-wrap .card .c-body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.card .c-body h3,
+p {
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #353434;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.mt-20 {
+    margin-top: 10px !important;
+}
